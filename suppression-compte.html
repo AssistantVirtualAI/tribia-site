@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supprimer mon compte — Tribia</title>
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<style>
+@font-face{font-family:N;src:url(assets/fonts/nunito-latin-wght-normal.woff2) format('woff2');font-weight:200 1000}
+:root{--ink:#2B2140;--soft:#6D6585;--cream:#FFF6E9;--violet:#7B5CFF;--coral:#FF6B5B;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--ink:#F3EEFF;--soft:#B9B1CF;--cream:#1E1830;--card:#2B2140}}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:500 17px/1.6 N,system-ui,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap}header a.home{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;font-weight:900;font-size:26px}
+header img{width:40px;height:40px;border-radius:22%}.sw{margin-left:auto;display:flex;gap:6px}
+.sw button{font:800 14px N;border:0;border-radius:999px;padding:6px 14px;cursor:pointer;background:var(--card);color:var(--ink)}.sw button[aria-pressed=true]{background:var(--violet);color:#fff}
+article{background:var(--card);border-radius:24px;padding:24px;margin-top:20px}
+h1{font-size:32px;line-height:1.15;margin:.2em 0}h2{font-size:21px;margin:1.6em 0 .4em}.meta{color:var(--soft);font-weight:700;font-size:14px}
+a{color:var(--violet)}li{margin:.25em 0}footer{margin-top:28px;color:var(--soft);font-size:14px;text-align:center}
+html[data-lang=fr] [data-l=en],html[data-lang=en] [data-l=fr]{display:none}
+</style>
+<script>(function(){var q=new URLSearchParams(location.search).get('lang');var l=q||(localStorage.getItem('tribia-lang'))||((navigator.language||'fr').slice(0,2)==='en'?'en':'fr');document.documentElement.dataset.lang=l==='en'?'en':'fr';document.documentElement.lang=document.documentElement.dataset.lang;})();</script>
+</head>
+<body><div class="wrap">
+<header><a class="home" href="index.html"><img src="assets/img/tribia-icon.png" alt="">Tribia</a>
+<div class="sw"><button data-set="fr">FR</button><button data-set="en">EN</button></div></header>
+<article>
+<div data-l="fr"><h1>Supprimer ton compte Tribia</h1>
+<p>Tu peux supprimer ton compte et tes données toi-même, en tout temps :</p>
+<ol><li>Ouvre Tribia (appli ou <a href="https://app.tribia.ai">app.tribia.ai</a>) et connecte-toi.</li><li>Touche <b>🧭 Centre</b> en haut, puis <b>👤 Mon compte</b>.</li><li>Touche <b>Supprimer mon compte…</b>, tape <b>SUPPRIMER</b>, puis confirme.</li></ol>
+<h2>Ce qui est supprimé immédiatement</h2><ul><li>Ton compte et ta connexion (courriel, Google, Microsoft, Apple).</li><li>Les espaces dont tu es propriétaire : agents, tâches, conversations, mémoire, fichiers, base de connaissances, connexions aux outils, maison et enfants.</li><li>Tes abonnements actifs sont annulés (aucun autre prélèvement).</li></ul>
+<h2>Ce qui est conservé</h2><ul><li>Traces hachées d’essai gratuit (courriel, appareil) pour empêcher les abus — elles ne permettent pas de t’identifier directement.</li><li>Factures exigées par la loi (jusqu’à 6 ans).</li><li>Sauvegardes techniques : écrasées en 30 jours au plus.</li></ul>
+<p>Tu n’as plus accès à l’appli ? Écris à <a href="mailto:aiagent@assistantvirtualai.com?subject=Suppression%20de%20compte%20Tribia">aiagent@assistantvirtualai.com</a> depuis le courriel de ton compte : nous supprimons tout sous 30 jours.</p></div>
+<div data-l="en"><h1>Delete your Tribia account</h1>
+<p>You can delete your account and data yourself at any time:</p>
+<ol><li>Open Tribia (app or <a href="https://app.tribia.ai">app.tribia.ai</a>) and sign in.</li><li>Tap <b>🧭 Hub</b> at the top, then <b>👤 My account</b>.</li><li>Tap <b>Delete my account…</b>, type <b>DELETE</b>, then confirm.</li></ol>
+<h2>Deleted immediately</h2><ul><li>Your account and sign-in (email, Google, Microsoft, Apple).</li><li>The spaces you own: agents, tasks, conversations, memory, files, knowledge base, tool connections, home and kids.</li><li>Your active subscriptions are cancelled (no further charges).</li></ul>
+<h2>Kept</h2><ul><li>Hashed free-trial traces (email, device) to prevent abuse — they don’t directly identify you.</li><li>Invoices required by law (up to 6 years).</li><li>Technical backups: overwritten within 30 days at most.</li></ul>
+<p>Can’t access the app anymore? Email <a href="mailto:aiagent@assistantvirtualai.com?subject=Tribia%20account%20deletion">aiagent@assistantvirtualai.com</a> from your account’s email: we delete everything within 30 days.</p></div>
+</article>
+<footer><a href="confidentialite.html">Confidentialité / Privacy</a> · <a href="conditions.html">Conditions / Terms</a> · <a href="suppression-compte.html">Supprimer mon compte / Delete account</a><br>© 2026 Automation Assistant Virtual AI Inc. (AVA) · Laval (Québec)</footer>
+</div>
+<script>document.querySelectorAll('.sw button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===document.documentElement.dataset.lang);b.onclick=function(){document.documentElement.dataset.lang=b.dataset.set;document.documentElement.lang=b.dataset.set;try{localStorage.setItem('tribia-lang',b.dataset.set)}catch(e){}document.querySelectorAll('.sw button').forEach(function(x){x.setAttribute('aria-pressed',x===b)})}});</script>
+</body></html>
